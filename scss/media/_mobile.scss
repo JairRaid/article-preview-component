@@ -1,0 +1,64 @@
+@use "../abstracts/variables"as *;
+@use "../base/typography"as *;
+@use "../components/share-links";
+
+@media(max-width: 48rem) {
+    article {
+        position: relative;
+        width: 100%;
+        margin-left: 24px;
+        margin-right: 24px;
+        border-radius: 10px;
+        background-color: white;
+        overflow: clip;
+        max-width: 500px;
+        box-shadow: 0 40px 40px -10px rgba(201, 213, 225, 0.5);
+    }
+
+    header img {
+        width: 100%;
+    }
+
+    main {
+        margin: 32px 30px 48px 30px;
+
+        h1 {
+            color: $grey-900;
+            @include text-preset-1-bold;
+            margin-bottom: 24px;
+        }
+
+        p {
+            color: $grey-500;
+            @include text-preset-2-medium;
+        }
+    }
+
+    footer {
+        display: flex;
+        align-items: center;
+        margin: 0 30px 18px 30px;
+
+        img.avatar {
+            width: 40px;
+            border-radius: 20px;
+            margin-right: 16px;
+        }
+
+        .author-info {
+            display: flex;
+            flex-direction: column;
+            margin-right: auto;
+        }
+
+        .author-info p:first-child {
+            color: $grey-900;
+            @include text-preset-2-bold;
+        }
+
+        .author-info p:last-child {
+            color: $grey-400;
+            @include text-preset-2-medium;
+        }
+    }
+}

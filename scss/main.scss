@@ -1,0 +1,22 @@
+@use "abstracts/mixins"as *;
+@use "abstracts/variables"as *;
+
+@use "base/font-family";
+@use "base/typography";
+@use "base/reset";
+
+@use "media/mobile";
+@use "media/tablet";
+@use "media/desktop";
+
+html,
+body {
+    height: 100%;
+    background-color: $grey-200;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

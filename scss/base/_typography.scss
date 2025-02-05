@@ -1,0 +1,32 @@
+// typography
+@mixin text-preset-1-bold() {
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 130%;
+    letter-spacing: 0.016rem;
+}
+
+@mixin text-preset-2-bold() {
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.813rem;
+    font-weight: 700;
+    line-height: 140%;
+    letter-spacing: 0.12%;
+}
+
+@mixin text-preset-2-medium() {
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.813rem;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: 0.12%;
+}
+
+@mixin text-preset-3() {
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.813rem;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 25%;
+}
